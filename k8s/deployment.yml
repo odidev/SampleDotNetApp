@@ -21,6 +21,8 @@ spec:
             cpu: "250m"
         ports:
         - containerPort: 80
+      imagePullSecrets:
+      - name: gcr-json-key
       tolerations:
       - key: "kubernetes.io/arch"
         operator: "Equal"
