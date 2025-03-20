@@ -2,6 +2,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: githubactions-gke-demo
+tolerations:
+- key: "kubernetes.io/arch"
+  operator: "Equal"
+  value: "arm64"
+  effect: "NoSchedule"
 spec:
   selector:
     matchLabels:
