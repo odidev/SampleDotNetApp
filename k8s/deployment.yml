@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: githubactions-gke-demo
-  replicas: 3 # Adjust the number of replicas as needed
+  replicas: 5 # Adjust the number of replicas as needed
   template:
     metadata:
       labels:
