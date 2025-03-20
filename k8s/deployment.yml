@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: githubactions-gke-demo
-  replicas: 5 # Adjust the number of replicas as needed
+  replicas: 3 # Adjust the number of replicas as needed
   template:
     metadata:
       labels:
@@ -18,7 +18,7 @@ spec:
         resources:
           limits:
             memory: "128Mi"
-            cpu: "500m"
+            cpu: "250m"
         ports:
         - containerPort: 80
       tolerations:
